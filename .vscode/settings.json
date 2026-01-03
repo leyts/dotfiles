@@ -1,0 +1,19 @@
+{
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+        "editor.formatOnSave": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.formatOnSave": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.sort.json": "explicit"
+    },
+    "files.associations": {
+        "*_bash_profile": "shellscript",
+        "*_gitconfig.tmpl": "properties"
+    }
+}
