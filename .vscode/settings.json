@@ -16,7 +16,6 @@
         "*_bash_aliases": "shellscript",
         "*_bash_profile": "shellscript",
         "*_bashrc": "shellscript",
-        "config": "ssh_config",
-        "config.tmpl": "properties"
+        "config": "ssh_config"
     }
 }

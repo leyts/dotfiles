@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "EditorConfig.EditorConfig",
+        "ms-vscode-remote.remote-ssh-edit",
         "redhat.vscode-yaml",
         "timonwong.shellcheck"
     ]
