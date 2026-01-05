@@ -1,0 +1,5 @@
+.chezmoi_symlinks/**
+
+{{ if ne .chezmoi.os "windows" }}
+.chezmoiscripts/windows/**
+{{ end }}
