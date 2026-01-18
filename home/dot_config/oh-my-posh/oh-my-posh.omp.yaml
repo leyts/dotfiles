@@ -4,9 +4,11 @@ final_space: true
 
 palette:
   blue: "#89B4FA"
-  closer: "#ACB0BE"
+  grey: "#ACB0BE"
   lavender: "#B7BDF8"
+  mint: "#A6E3C1"
   pink: "#F5BDE6"
+  sand: "#EED49F"
 
 blocks:
   - type: prompt
@@ -18,7 +20,7 @@ blocks:
         template: "{{ .Path }} "
         options:
           style: full
-          folder_separator_icon: "/"
+          folder_separator_icon: /
 
       - type: git
         style: plain
@@ -29,5 +31,13 @@ blocks:
 
       - type: text
         style: plain
-        foreground: p:closer
+        foreground: p:grey
         template: 
+
+  - type: prompt
+    alignment: right
+    segments:
+      - type: claude
+        style: plain
+        foreground: p:mint
+        template: ' <p:sand>claude:(</>{{ .Model.DisplayName | lower | replace " " "-" }} · {{ .FormattedTokens }} · {{ .ContextWindow.TotalInputTokens }} → {{ .ContextWindow.TotalOutputTokens }} · {{ .TokenUsagePercent.String }}%<p:sand>)</>'
