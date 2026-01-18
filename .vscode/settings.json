@@ -9,9 +9,6 @@
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.formatOnSave": true
     },
-    "editor.codeActionsOnSave": {
-        "source.sort.json": "explicit"
-    },
     "files.associations": {
         "*_bash_aliases": "shellscript",
         "*_bash_profile": "shellscript",
