@@ -1,0 +1,73 @@
+{
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "git-firefly": true,
+    "html": true,
+    "material-icon-theme": true,
+    "toml": true,
+  },
+  "buffer_font_size": 18,
+  "collaboration_panel": {
+    "button": false,
+  },
+  "cursor_blink": false,
+  "cursor_shape": "block",
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/.sl",
+    "**/.repo",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/__pycache__",
+    "**/.ruff_cache",
+  ],
+  "file_types": {
+    "Git Attributes": ["**/{git,.git,.git/info}/attributes"],
+    "Git Config": [
+      "*.gitconfig",
+      "**/{git,.git/modules,.git/modules/*}/config",
+    ],
+    "Git Ignore": ["**/{git,.git}/ignore", "**/.git/info/exclude"],
+  },
+  "gutter": {
+    "breakpoints": false,
+    "folds": false,
+  },
+  "journal": {
+    "hour_format": "hour24",
+  },
+  "project_panel": {
+    "auto_reveal_entries": false,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "show_edit_predictions": false,
+  "status_bar": {
+    "cursor_position_button": false,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "terminal": {
+    "env": {
+      "GIT_EDITOR": "zed --wait",
+    },
+    "font_family": "MesloLGM Nerd Font",
+    "font_size": 14,
+  },
+  "theme": "Catppuccin Mocha",
+  "title_bar": {
+    "show_onboarding_banner": true,
+    "show_user_picture": false,
+  },
+}
