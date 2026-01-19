@@ -17,5 +17,5 @@ end_of_line = crlf
 [*.yaml]
 indent_size = 2
 
-[**/private_dot_claude/settings.json]
+[**/{.claude,zed}/settings.json]
 indent_size = 2
