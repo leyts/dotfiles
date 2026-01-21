@@ -10,5 +10,8 @@
   "statusLine": {
     "type": "command",
     "command": "oh-my-posh claude --config ~/.config/oh-my-posh/oh-my-posh.omp.yaml"
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true
   }
 }
