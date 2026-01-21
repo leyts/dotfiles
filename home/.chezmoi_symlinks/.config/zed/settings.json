@@ -67,7 +67,7 @@
   },
   "theme": "Catppuccin Mocha",
   "title_bar": {
-    "show_onboarding_banner": true,
+    "show_onboarding_banner": false,
     "show_user_picture": false,
   },
 }
