@@ -19,3 +19,6 @@ indent_size = 2
 
 [**/{.claude,zed}/settings.json]
 indent_size = 2
+
+[**/git/config.tmpl]
+indent_style = tab
