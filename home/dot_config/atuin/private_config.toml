@@ -1,0 +1,6 @@
+dialect = "uk"
+sync_address = "https://atuin.laddisonroach.com"
+sync_frequency = "5m"
+
+[sync]
+records = true
