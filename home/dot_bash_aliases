@@ -1,3 +1,4 @@
 # shellcheck shell=bash
 
 alias cz=chezmoi
+alias ll='ls -F -l --almost-all --group-directories-first --human-readable --time-style=long-iso'
