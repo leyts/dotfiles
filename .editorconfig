@@ -14,7 +14,7 @@ trim_trailing_whitespace = false
 [*.ps1]
 end_of_line = crlf
 
-[*.yaml]
+[*.{yaml,yml}]
 indent_size = 2
 
 [**/{.claude,zed}/settings.json]
