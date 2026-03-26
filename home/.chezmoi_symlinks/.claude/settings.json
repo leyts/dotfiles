@@ -7,6 +7,7 @@
     "commit": "",
     "pr": ""
   },
+  "includeGitInstructions": false,
   "permissions": {
     "allow": [
       "Bash(uv run *)",
@@ -32,7 +33,9 @@
     "context7@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
     "astral@astral-sh": true,
-    "skill-creator@claude-plugins-official": true
+    "skill-creator@claude-plugins-official": true,
+    "obsidian@obsidian-skills": true,
+    "superpowers@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "astral-sh": {
@@ -40,9 +43,29 @@
         "source": "github",
         "repo": "astral-sh/claude-code-plugins"
       }
+    },
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
+      }
     }
   },
   "spinnerTipsEnabled": false,
+  "effortLevel": "high",
   "promptSuggestionEnabled": false,
-  "effortLevel": "high"
+  "autoMemoryEnabled": false,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/ruff-format.sh"
+          }
+        ]
+      }
+    ]
+  }
 }
