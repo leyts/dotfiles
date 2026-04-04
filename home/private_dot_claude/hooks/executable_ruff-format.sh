@@ -1,9 +1,11 @@
 #!/bin/bash
-# Post-tool hook: run ruff formatter on .py files.
+# Post-tool hook: run ruff format on Python (.py) files.
 
 input=$(cat)
-file_path=$(echo "$input" | jq -r '.tool_response.filePath // .tool_input.file_path')
+file_path=$(echo "$input" | jq -r '.tool_input.file_path')
 
-if [[ "$file_path" == *.py ]]; then
-    uv run ruff format -- "$file_path"
+if [[ "$file_path" != *.py ]]; then
+    exit 0
 fi
+
+uv run ruff format --quiet -- "$file_path"
