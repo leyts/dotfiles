@@ -4,7 +4,6 @@ extensions:
     - charliermarsh.ruff
     - davidanson.vscode-markdownlint
     - editorconfig.editorconfig
-    - mhutchie.git-graph
     - miguelsolorio.fluent-icons
     - ms-python.debugpy
     - ms-python.python
