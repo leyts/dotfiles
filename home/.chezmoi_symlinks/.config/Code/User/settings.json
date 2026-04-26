@@ -34,7 +34,6 @@
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.fontSize": 18,
-    "editor.glyphMargin": false,
     "editor.inlineSuggest.enabled": false,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
@@ -51,17 +50,16 @@
         "**/.ruff_cache": true,
         "**/*.egg-info": true
     },
-    "git-graph.repository.commits.loadMore": 300,
     "git.allowForcePush": true,
     "git.confirmForcePush": false,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "never",
     "linesinfostatusbar.totalDisplayFormat": "Lns. %d",
-    "marimo.telemetry": false,
     "markdown.extension.showActionButtons": true,
     "markdownlint.focusMode": true,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.hidesExplorerArrows": true,
+    "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "standard",
     "python.useEnvironmentsExtension": true,
     "search.exclude": {
@@ -80,6 +78,9 @@
     "update.showReleaseNotes": false,
     "window.titleBarStyle": "custom",
     "workbench.activityBar.compact": true,
+    "workbench.colorCustomizations": {
+        "editorInlayHint.parameterBackground": "#313238bf"
+    },
     "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
