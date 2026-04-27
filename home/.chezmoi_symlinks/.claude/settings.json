@@ -1,13 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "env": {
-    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+    "DISABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_SCROLL_SPEED": "3"
   },
-  "attribution": {
-    "commit": "",
-    "pr": ""
-  },
-  "includeGitInstructions": false,
   "permissions": {
     "allow": [
       "Bash(uv run *)",
@@ -20,8 +16,7 @@
     "deny": [
       "Read(./.env)",
       "Read(./.env.*)",
-      "Read(./.home/**)",
-      "Bash(git config *)"
+      "Read(./.home/**)"
     ]
   },
   "model": "opus",
@@ -52,7 +47,6 @@
     }
   },
   "spinnerTipsEnabled": false,
-  "effortLevel": "high",
   "promptSuggestionEnabled": false,
   "autoMemoryEnabled": false,
   "hooks": {
