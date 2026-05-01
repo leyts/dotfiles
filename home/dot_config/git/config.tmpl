@@ -1,13 +1,24 @@
 [user]
 	name = {{ .name }}
 	email = {{ .email }}
+	signingkey = A9C8650B21813D3CFC4DA23F74DD03E2436B460E
 [init]
-	defaultBranch = main
+	defaultbranch = main
 [diff]
 	algorithm = histogram
-	colorMoved = plain
-	colorMovedWS = allow-indentation-change
+	colormoved = plain
+	colormovedws = allow-indentation-change
 	context = 5
-	mnemonicPrefix = true
+	mnemonicprefix = true
 [help]
-	autoCorrect = prompt
+	autocorrect = prompt
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
