@@ -2,11 +2,14 @@
 import = [ "~/.config/alacritty/themes/themes/ayu_dark.toml" ]
 
 [font]
-size = 12
+size = 16
 normal = { family = "MesloLGM Nerd Font", style = "Regular" }
 
-[terminal]
-shell = { program = "zellij" }
+[cursor.style]
+blinking = "Never"
+
+[terminal.shell]
+program = "zellij"
 
 [keyboard]
 bindings = [ { key = "Return", mods = "Shift", chars = "\u001b\r" } ]
