@@ -1,4 +1,22 @@
 # shellcheck shell=bash
 
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias diff='diff --color=auto'
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 alias cz=chezmoi
 alias ll='ls -F -l --almost-all --group-directories-first --human-readable --time-style=long-iso'
+alias zj=zellij
+
+# Disable Wget HSTS database
+# Source: https://stackoverflow.com/questions/47548271/disable-wget-history-tracking#comment140351573_48415198
+alias wget='wget --hsts-file=/dev/null'
+
+if command -v plocate &>/dev/null; then
+    alias locate='plocate'
+fi
