@@ -12,14 +12,7 @@ character = "▏"
 skip-levels = 1
 
 [editor.statusline]
-right = [
-    "diagnostics",
-    "selections",
-    "register",
-    "file-encoding",
-    "file-line-ending",
-    "file-type",
-]
+right = ["diagnostics", "selections", "register", "file-encoding", "file-line-ending", "file-type"]
 mode.normal = "N"
 mode.insert = "I"
 mode.select = "S"
