@@ -13,6 +13,7 @@
         "*_bash_aliases": "shellscript",
         "*_bash_profile": "shellscript",
         "*_bashrc": "shellscript",
+        "*pythonrc": "python",
         "config": "ssh_config"
     }
 }
