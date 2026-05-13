@@ -1,15 +1,37 @@
 {
+  "mouse_wheel_zoom": true,
+  "icon_theme": "Material Icon Theme",
+  "remove_trailing_whitespace_on_save": false,
+  "ensure_final_newline_on_save": false,
+  "helix_mode": true,
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "proxy": "",
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "Droid Sans Mono",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "auto_install_extensions": {
     "catppuccin": true,
-    "docker-compose": true,
-    "dockerfile": true,
     "git-firefly": true,
-    "html": true,
     "material-icon-theme": true,
     "toml": true,
   },
   "buffer_font_size": 18,
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
   "cursor_blink": false,
@@ -19,8 +41,6 @@
     "**/.svn",
     "**/.hg",
     "**/.jj",
-    "**/.sl",
-    "**/.repo",
     "**/CVS",
     "**/.DS_Store",
     "**/Thumbs.db",
@@ -38,7 +58,7 @@
     "Git Ignore": ["**/{git,.git}/ignore", "**/.git/info/exclude"],
   },
   "gutter": {
-    "breakpoints": false,
+    "bookmarks": false,
     "folds": false,
   },
   "journal": {
@@ -59,15 +79,17 @@
     "metrics": false,
   },
   "terminal": {
+    "font_weight": 400.0,
     "env": {
       "GIT_EDITOR": "zed --wait",
     },
     "font_family": "MesloLGM Nerd Font",
-    "font_size": 14,
+    "font_size": 18.0,
   },
   "theme": "Catppuccin Mocha",
   "title_bar": {
     "show_onboarding_banner": false,
     "show_user_picture": false,
+    "show_sign_in": false,
   },
 }
