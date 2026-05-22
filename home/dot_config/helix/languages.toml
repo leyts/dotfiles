@@ -10,9 +10,13 @@ validation = true
 command = "uwu_colors"
 
 [[language]]
-name = "python"
-language-servers = ["ty", "pylsp"]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "kdl"
 language-servers = [{ name = "uwu_colors" }]
+
+[[language]]
+name = "python"
+language-servers = ["ty", "pylsp"]
