@@ -6,12 +6,12 @@ validation = true
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
 "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
 
+[language-server.uwu_colors]
+command = "uwu_colors"
+
 [[language]]
 name = "python"
 language-servers = ["ty", "pylsp"]
-
-[language-server.uwu_colors]
-command = "uwu_colors"
 
 [[language]]
 name = "kdl"
