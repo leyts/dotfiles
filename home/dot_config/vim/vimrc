@@ -4,3 +4,9 @@ set shiftwidth=4       " Indent width
 set nowrap             " Disable wrapping
 set noruler            " Disable ruler
 set fillchars+=eob:\   " Hide `~` on empty lines past end of buffer
+
+" Ensure `~/.cache/vim` exists, then store `viminfo` there
+if !isdirectory(expand('~/.cache/vim'))
+    call mkdir(expand('~/.cache/vim'), 'p')
+endif
+set viminfo+=n~/.cache/vim/viminfo
