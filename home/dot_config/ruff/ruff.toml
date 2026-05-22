@@ -1,0 +1,9 @@
+line-length = 79
+target-version = "py314"
+output-format = "grouped"
+
+[format]
+docstring-code-format = true
+
+[lint.pydocstyle]
+convention = "google"
