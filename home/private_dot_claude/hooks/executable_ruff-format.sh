@@ -8,4 +8,4 @@ if [[ "$file_path" != *.py ]]; then
     exit 0
 fi
 
-uv run ruff format --quiet -- "$file_path"
+uv run --frozen ruff format --no-cache --quiet -- "$file_path"
