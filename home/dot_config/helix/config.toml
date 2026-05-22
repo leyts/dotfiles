@@ -1,4 +1,8 @@
-theme = "akari-night"
+theme = "base16_terminal"
+
+[editor]
+mouse = false
+insert-final-newline = false
 
 [editor.gutters]
 layout = ["spacer", "line-numbers", "spacer", "diff"]
@@ -12,10 +16,19 @@ character = "▏"
 skip-levels = 1
 
 [editor.statusline]
-right = ["diagnostics", "selections", "register", "file-encoding", "file-line-ending", "file-type"]
+right = [
+  "diagnostics",
+  "register",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
 mode.normal = "N"
 mode.insert = "I"
 mode.select = "S"
+
+[keys.normal]
+C-s = ":w"  # Ctrl-s to :w (save file)
 
 [keys.normal.C-y]
 # Open the file(s) in the current window
