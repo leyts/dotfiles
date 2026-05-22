@@ -8,7 +8,7 @@ normal = { family = "MesloLGM Nerd Font", style = "Regular" }
 [cursor.style]
 blinking = "Never"
 
-[terminal.shell]
+[shell]
 program = "zellij"
 
 [keyboard]
