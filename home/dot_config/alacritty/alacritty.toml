@@ -1,8 +1,11 @@
 [general]
-import = ["~/.config/alacritty/themes/themes/ayu_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"]
+
+[window]
+startup_mode = "Maximized"
 
 [font]
-size = 16
+size = 19.5
 normal = { family = "MesloLGM Nerd Font", style = "Regular" }
 
 [cursor.style]
