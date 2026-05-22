@@ -1,5 +1,5 @@
 [general]
-import = [ "~/.config/alacritty/themes/themes/ayu_dark.toml" ]
+import = ["~/.config/alacritty/themes/themes/ayu_dark.toml"]
 
 [font]
 size = 16
@@ -12,4 +12,4 @@ blinking = "Never"
 program = "zellij"
 
 [keyboard]
-bindings = [ { key = "Return", mods = "Shift", chars = "\u001b\r" } ]
+bindings = [{ key = "Return", mods = "Shift", chars = "\u001b\r" }]
