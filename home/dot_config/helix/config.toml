@@ -1,8 +1,9 @@
-theme = "base16_terminal"
+theme = "ly-theme"
 
 [editor]
 mouse = false
 insert-final-newline = false
+insecure = true
 
 [editor.gutters]
 layout = ["spacer", "line-numbers", "spacer", "diff"]
@@ -14,6 +15,9 @@ min-width = 1
 render = true
 character = "▏"
 skip-levels = 1
+
+[editor.lsp]
+display-inlay-hints = true
 
 [editor.statusline]
 right = [
@@ -28,12 +32,30 @@ mode.insert = "I"
 mode.select = "S"
 
 [keys.normal]
-C-s = ":w"  # Ctrl-s to :w (save file)
+C-s = ":w"  # Ctrl-s (save file)
+C-y = [
+  ":sh rm -f /tmp/unique-ca1ea106",
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-ca1ea106',
+  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ":open %sh{cat /tmp/unique-ca1ea106}",
+  ":redraw",
+  ":set mouse false",
+  ":set mouse true",
+]
+C-r = ":reload-all"
 
-[keys.normal.C-y]
-# Open the file(s) in the current window
-y = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/yazi-picker.sh open %{buffer_name}"
-# Open the file(s) in a vertical split
-v = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/yazi-picker.sh vsplit %{buffer_name}"
-# Open the file(s) in a horizontal split
-h = ":sh zellij run -n Yazi -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/yazi-picker.sh hsplit %{buffer_name}"
+[keys.normal.space]
+"=" = ":format"
+
+[keys.normal.g]
+a = "code_action"  # Maps `ga` to show possible code actions
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"

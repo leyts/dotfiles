@@ -1,0 +1,3 @@
+inherits = "base16_terminal"
+
+"ui.virtual.inlay-hint" = { bg = "gray", modifiers = ["dim"] }

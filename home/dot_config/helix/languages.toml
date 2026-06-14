@@ -9,14 +9,31 @@ validation = true
 [language-server.uwu_colors]
 command = "uwu_colors"
 
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
 [[language]]
-name = "bash"
-indent = { tab-width = 4, unit = "    " }
+name = "python"
+language-servers = ["ruff", "ty"]
+auto-format = true
 
 [[language]]
 name = "kdl"
 language-servers = [{ name = "uwu_colors" }]
 
 [[language]]
-name = "python"
-language-servers = ["ty", "pylsp"]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "toml"
+language-servers = ["tombi"]
+
+[[language]]
+name = "markdown"
+comment-tokens = ["-", "+", "*", "1.", ">", "- [ ]"]
