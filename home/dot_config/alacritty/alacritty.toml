@@ -2,6 +2,7 @@
 import = ["~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"]
 
 [window]
+decorations = "none"
 startup_mode = "Maximized"
 
 [font]
@@ -11,7 +12,7 @@ normal = { family = "MesloLGM Nerd Font", style = "Regular" }
 [cursor.style]
 blinking = "Never"
 
-[shell]
+[terminal.shell]
 program = "zellij"
 
 [keyboard]
