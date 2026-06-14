@@ -1,0 +1,6 @@
+{
+  "grabBackFocus": true,
+  "keyMappings": "map <space>? showHelp\n\n# Helix key mappings\n# Source: https://github.com/philc/vimium/wiki/Key-Mappings/ac9deb5a74d7376aafb971685dc5c8d129219338#helix\nmap ge scrollToBottom\nmap <c-u> scrollPageUp\nmap <c-d> scrollPageDown\nmap <c-f> scrollFullPageDown\nmap <c-b> scrollFullPageUp\nmap zh scrollToLeft\nmap zl scrollToRight\nmap gh firstTab\nmap gp previousTab\nmap gn nextTab\nmap ga visitPreviousTab\nmap gl lastTab\nmap d removeTab\nmap u restoreTab\nmap e Vomnibar.activateEditUrl\nmap E Vomnibar.activateEditUrlInNewTab\nmap x enterVisualLineMode\nmap X enterVisualLineMode\nmap \\ passNextKey",
+  "searchEngines": "dd: https://devdocs.io/#q=%s DevDocs\ngh: https://github.com/search?q=%s GitHub\nw: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\nyt: https://www.youtube.com/results?search_query=%s YouTube",
+  "settingsVersion": "2.4.2"
+}
