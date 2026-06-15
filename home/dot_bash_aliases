@@ -12,11 +12,16 @@ fi
 alias cz=chezmoi
 alias ll='ls -F -l --almost-all --group-directories-first --human-readable --time-style=long-iso'
 alias zj=zellij
+alias lg=lazygit
 
 # Disable Wget HSTS database
 # Source: https://stackoverflow.com/questions/47548271/disable-wget-history-tracking#comment140351573_48415198
 alias wget='wget --hsts-file=/dev/null'
 
-if command -v plocate &>/dev/null; then
+if command -v plocate &> /dev/null; then
     alias locate='plocate'
 fi
+
+# Temporary
+alias catt='command cat'
+alias cat='printf "%s\n" "Use bat, or catt for real cat." >&2; false'
