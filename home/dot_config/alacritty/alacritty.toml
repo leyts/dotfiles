@@ -13,7 +13,8 @@ normal = { family = "MesloLGM Nerd Font", style = "Regular" }
 blinking = "Never"
 
 [terminal.shell]
-program = "zellij"
+program = "mise"
+args = ["exec", "--", "zellij"]
 
 [keyboard]
 bindings = [{ key = "Return", mods = "Shift", chars = "\u001b\r" }]

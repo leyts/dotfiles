@@ -3,7 +3,6 @@ theme = "ly-theme"
 [editor]
 mouse = false
 insert-final-newline = false
-insecure = true
 
 [editor.gutters]
 layout = ["spacer", "line-numbers", "spacer", "diff"]
@@ -39,8 +38,6 @@ C-y = [
   ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
   ":open %sh{cat /tmp/unique-ca1ea106}",
   ":redraw",
-  ":set mouse false",
-  ":set mouse true",
 ]
 C-r = ":reload-all"
 

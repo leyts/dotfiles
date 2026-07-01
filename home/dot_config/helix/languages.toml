@@ -1,13 +1,5 @@
-[language-server.yaml-language-server.config.yaml]
-format = { enable = true }
-validation = true
-
-[language-server.yaml-language-server.config.yaml.schemas]
-"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
-"https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
-
-[language-server.uwu_colors]
-command = "uwu_colors"
+# [language-server.uwu_colors]
+# command = "uwu_colors"
 
 [language-server.ruff]
 command = "ruff"
@@ -23,17 +15,17 @@ language-servers = ["ruff", "ty"]
 auto-format = true
 
 [[language]]
-name = "kdl"
-language-servers = [{ name = "uwu_colors" }]
-
-[[language]]
-name = "bash"
-indent = { tab-width = 4, unit = "    " }
-
-[[language]]
 name = "toml"
 language-servers = ["tombi"]
+
+# [[language]]
+# name = "kdl"
+# language-servers = [{ name = "uwu_colors" }]
 
 [[language]]
 name = "markdown"
 comment-tokens = ["-", "+", "*", "1.", ">", "- [ ]"]
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }

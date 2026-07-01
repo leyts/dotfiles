@@ -1,2 +1,12 @@
 [mgr]
 show_hidden = true
+
+[open]
+prepend_rules = [
+  { url = "*.gitignore", use = "edit" },
+]
+
+[plugin]
+prepend_previewers = [
+  { url = "*.gitignore", run = "code" },  # `.gitignore` previewer
+]
