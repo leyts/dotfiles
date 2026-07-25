@@ -2,3 +2,8 @@
 on = ["c", "m"]
 run = "plugin chmod"
 desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
+on = "<C-m>"
+run = "plugin mail"
+desc = "Mail selected files"
