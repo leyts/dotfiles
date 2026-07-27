@@ -14,7 +14,7 @@ trim_trailing_whitespace = false
 [*.{yaml,yml}]
 indent_size = 2
 
-[**/{.claude,zed}/settings.json]
+[**/zed/settings.json]
 indent_size = 2
 
 [**/git/config.tmpl]
