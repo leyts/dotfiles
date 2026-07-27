@@ -1,11 +1,4 @@
 {
-    "[dockercompose]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.formatOnSave": true
-    },
-    "[jsonc]": {
-        "files.insertFinalNewline": true
-    },
     "[markdown]": {
         "editor.codeActionsOnSave": {
             "source.fixAll.markdownlint": "explicit"
@@ -20,6 +13,13 @@
             "source.organizeImports": "explicit"
         },
         "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            79
+        ]
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tombi-toml.tombi",
         "editor.formatOnSave": true
     },
     "[yaml]": {
@@ -28,66 +28,92 @@
     },
     "catppuccin.accentColor": "flamingo",
     "chat.disableAIFeatures": true,
-    "claudeCode.preferredLocation": "sidebar",
-    "claudeCode.useTerminal": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
+    "editor.foldingImportsByDefault": true,
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 18,
+    "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.inlineSuggest.enabled": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.lineHeight": 1.2,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmPasteNative": false,
-    "extensions.autoUpdate": "onlyEnabledExtensions",
     "extensions.ignoreRecommendations": true,
     "files.exclude": {
         "**/__pycache__": true,
-        "**/.ruff_cache": true,
-        "**/*.egg-info": true
+        "**/.ruff_cache": true
     },
     "git.allowForcePush": true,
     "git.confirmForcePush": false,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "never",
+    "json.schemaDownload.trustedDomains": {
+        "https://esm.sh": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    },
     "linesinfostatusbar.totalDisplayFormat": "Lns. %d",
+    "marimo.telemetry": false,
     "markdown.extension.showActionButtons": true,
     "markdownlint.focusMode": true,
     "material-icon-theme.folders.theme": "classic",
     "material-icon-theme.hidesExplorerArrows": true,
+    "notebook.cellToolbarVisibility": "click",
+    "notebook.consolidatedRunButton": true,
+    "powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+    "powershell.codeFormatting.ignoreOneLineBlock": false,
+    "powershell.codeFormatting.pipelineIndentationStyle": "IncreaseIndentationForFirstPipeline",
+    "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+    "powershell.codeFormatting.useConstantStrings": true,
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.codeFormatting.whitespaceBetweenParameters": true,
+    "powershell.enableReferencesCodeLens": false,
+    "powershell.integratedConsole.suppressStartupBanner": true,
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "standard",
-    "python.useEnvironmentsExtension": true,
+    "python.experiments.enabled": false,
+    "python.languageServer": "Default",
     "search.exclude": {
+        ".github/": true,
         "**/*.lock": true
     },
+    "search.smartCase": true,
+    "security.promptForLocalFileProtocolHandling": false,
     "security.workspace.trust.enabled": false,
-    "sqldeveloper.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
+    "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 18,
     "terminal.integrated.initialHint": false,
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.smoothScrolling": true,
     "update.mode": "start",
     "update.showReleaseNotes": false,
+    "update.titleBar": false,
+    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "workbench.activityBar.compact": true,
-    "workbench.colorCustomizations": {
-        "editorInlayHint.parameterBackground": "#313238bf"
-    },
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
     "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
+    "workbench.editor.useModal": "off",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.smoothScrolling": true,
     "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "fluent-icons",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false
 }
