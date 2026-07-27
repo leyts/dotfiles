@@ -1,11 +1,8 @@
 .chezmoi_symlinks/**
 
 {{ if ne .chezmoi.os "windows" }}
-.chezmoiscripts/windows/**
 AppData/
 AppData/**
-Documents/
-Documents/**
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}
